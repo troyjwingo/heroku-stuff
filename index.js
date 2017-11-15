@@ -8,6 +8,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + "/public/index.html"));
 })
  
-app.listen(3000);
+app.listen(process.env.PORT || 5000)
 
 console.log("Server On")
